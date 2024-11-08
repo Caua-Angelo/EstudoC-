@@ -1,0 +1,14 @@
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\bin\Debug\net8.0\EstudoAula18C#Exercicio.exe
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\bin\Debug\net8.0\EstudoAula18C#Exercicio.deps.json
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\bin\Debug\net8.0\EstudoAula18C#Exercicio.runtimeconfig.json
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\bin\Debug\net8.0\EstudoAula18C#Exercicio.dll
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\bin\Debug\net8.0\EstudoAula18C#Exercicio.pdb
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\EstudoAula18C#Exercicio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\EstudoAula18C#Exercicio.AssemblyInfoInputs.cache
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\EstudoAula18C#Exercicio.AssemblyInfo.cs
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\EstudoAula18C#Exercicio.csproj.CoreCompileInputs.cache
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\EstudoAula18C#Exercicio.dll
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\refint\EstudoAula18C#Exercicio.dll
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\EstudoAula18C#Exercicio.pdb
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\EstudoAula18C#Exercicio.genruntimeconfig.cache
+D:\Estudos\C# .Net\EstudoAula18C#Exercicio\obj\Debug\net8.0\ref\EstudoAula18C#Exercicio.dll

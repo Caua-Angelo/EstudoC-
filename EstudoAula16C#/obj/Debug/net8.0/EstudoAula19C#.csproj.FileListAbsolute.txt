@@ -1,0 +1,14 @@
+D:\Estudos\C# .Net\EstudoAula19C#\bin\Debug\net8.0\EstudoAula19C#.exe
+D:\Estudos\C# .Net\EstudoAula19C#\bin\Debug\net8.0\EstudoAula19C#.deps.json
+D:\Estudos\C# .Net\EstudoAula19C#\bin\Debug\net8.0\EstudoAula19C#.runtimeconfig.json
+D:\Estudos\C# .Net\EstudoAula19C#\bin\Debug\net8.0\EstudoAula19C#.dll
+D:\Estudos\C# .Net\EstudoAula19C#\bin\Debug\net8.0\EstudoAula19C#.pdb
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\EstudoAula19C#.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\EstudoAula19C#.AssemblyInfoInputs.cache
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\EstudoAula19C#.AssemblyInfo.cs
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\EstudoAula19C#.csproj.CoreCompileInputs.cache
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\EstudoAula19C#.dll
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\refint\EstudoAula19C#.dll
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\EstudoAula19C#.pdb
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\EstudoAula19C#.genruntimeconfig.cache
+D:\Estudos\C# .Net\EstudoAula19C#\obj\Debug\net8.0\ref\EstudoAula19C#.dll
