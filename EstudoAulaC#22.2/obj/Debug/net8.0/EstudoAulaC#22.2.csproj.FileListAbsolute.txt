@@ -1,0 +1,15 @@
+D:\Estudos\.Net C#\EstudoAulaC#22.2\bin\Debug\net8.0\EstudoAulaC#22.2.exe
+D:\Estudos\.Net C#\EstudoAulaC#22.2\bin\Debug\net8.0\EstudoAulaC#22.2.deps.json
+D:\Estudos\.Net C#\EstudoAulaC#22.2\bin\Debug\net8.0\EstudoAulaC#22.2.runtimeconfig.json
+D:\Estudos\.Net C#\EstudoAulaC#22.2\bin\Debug\net8.0\EstudoAulaC#22.2.dll
+D:\Estudos\.Net C#\EstudoAulaC#22.2\bin\Debug\net8.0\EstudoAulaC#22.2.pdb
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.AssemblyInfoInputs.cache
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.AssemblyInfo.cs
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.csproj.CoreCompileInputs.cache
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.sourcelink.json
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.dll
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\refint\EstudoAulaC#22.2.dll
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.pdb
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\EstudoAulaC#22.2.genruntimeconfig.cache
+D:\Estudos\.Net C#\EstudoAulaC#22.2\obj\Debug\net8.0\ref\EstudoAulaC#22.2.dll
