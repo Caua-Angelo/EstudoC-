@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EstudoAulaC#23/1.0.0": {
+        "runtime": {
+          "EstudoAulaC#23.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EstudoAulaC#23/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

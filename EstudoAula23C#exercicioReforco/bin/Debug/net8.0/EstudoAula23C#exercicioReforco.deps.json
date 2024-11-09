@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EstudoAula23C#exercicioReforco/1.0.0": {
+        "runtime": {
+          "EstudoAula23C#exercicioReforco.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EstudoAula23C#exercicioReforco/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

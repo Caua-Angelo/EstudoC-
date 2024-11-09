@@ -1,0 +1,25 @@
+# Ignorar pastas de build e dependências
+/node_modules
+/bin
+/obj
+bin/
+obj/
+*.dll
+*.pdb
+
+# Ignorar arquivos temporários
+*.tmp
+*.log
+*.cache
+
+# Ignorar arquivos de configuração
+*.env
+config.json
+
+# Configurações locais
+*.dbmdl
+*.jfm
+.vscode/
+*.user
+*.suo
+/EstudoAula23C#exercicioReforco/.vs/EstudoAula23C#exercicioReforco

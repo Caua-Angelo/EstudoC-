@@ -1,0 +1,15 @@
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.AssemblyInfoInputs.cache
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.AssemblyInfo.cs
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.csproj.CoreCompileInputs.cache
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.sourcelink.json
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\bin\Debug\net8.0\EstudoAula23C#exercicioReforco.exe
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\bin\Debug\net8.0\EstudoAula23C#exercicioReforco.deps.json
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\bin\Debug\net8.0\EstudoAula23C#exercicioReforco.runtimeconfig.json
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\bin\Debug\net8.0\EstudoAula23C#exercicioReforco.dll
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\bin\Debug\net8.0\EstudoAula23C#exercicioReforco.pdb
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.dll
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\refint\EstudoAula23C#exercicioReforco.dll
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.pdb
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\EstudoAula23C#exercicioReforco.genruntimeconfig.cache
+D:\Estudos\.Net C#\EstudoAula23C#exercicioReforco\obj\Debug\net8.0\ref\EstudoAula23C#exercicioReforco.dll
