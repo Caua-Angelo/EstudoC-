@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstudoAulaC#22.2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88559705dc7b15520262f6e9e99e0bd3aa3b2538")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06a2cf59770bb9f70b0a50ef952f544b7359f38c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstudoAulaC#22.2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstudoAulaC#22.2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
