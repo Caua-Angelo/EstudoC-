@@ -8,8 +8,6 @@
             int num2 = int.Parse(vet[1]);
             int num3 = int.Parse(vet[2]);
 
-
-
             double resultado = Maior(num1,num2,num3);
             double resultado2 = Maior(1, 7, 4);//pode inclusive adicionar os números diretamente
 
