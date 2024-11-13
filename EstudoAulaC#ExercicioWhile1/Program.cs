@@ -1,15 +1,18 @@
-﻿namespace EstudoAulaC_ExercicioWhile1 {
-    internal class Program {
+﻿using System;
+
+namespace uri1114 {
+    class Program {
         static void Main(string[] args) {
-            Console.WriteLine("Entre um valor");
-            int senha= 0;
+            Console.WriteLine("Entre com um valor");
+
+            int senha = int.Parse(Console.ReadLine());
+
             while (senha != 2002) {
                 senha = int.Parse(Console.ReadLine());
-                if (senha != 2002) { 
-                Console.WriteLine("Senha invalida");
+                Console.WriteLine("Senha Invalida");
             }
-            }
-            Console.WriteLine("Acesso permitido");
+
+            Console.WriteLine("Acesso Permitido");
         }
     }
 }
