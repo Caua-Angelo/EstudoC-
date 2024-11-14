@@ -11,16 +11,15 @@ namespace EstudoAulaC_ExercicioFor4 {
                 int num0 = int.Parse(vet[0]);
                 int num1 = int.Parse(vet[1]);
 
-                double divisao = 0;
-                double
-                if (num1 > 0) {
-                    divisao = num1 / num0;
-                   
-                }
-                else if (num1 == 0) {
+                double divisao;
+                
+                if (num1 ==  0) {
                     Console.WriteLine("Divisão impossivel");
                 }
-                Console.WriteLine(divisao);
+                else { 
+                    divisao = (double)num0 / num1;
+                Console.WriteLine(divisao.ToString("F2",CultureInfo.InvariantCulture));
+                }
             }
         }
     }
