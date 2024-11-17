@@ -4,10 +4,9 @@
 namespace EstudoAulaC_38 {
     internal class Program {
         static void Main(string[] args) {
-            Triangulo x, y;
 
-            x = new Triangulo();
-            y = new Triangulo();
+            Triangulo x = new Triangulo();
+            Triangulo y = new Triangulo();
 
             Console.WriteLine("Entre com as medidas do triangulo X!");
             x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -16,14 +15,11 @@ namespace EstudoAulaC_38 {
 
             Console.WriteLine("Entre com as medidas do triangulo Y!");
 
-
             y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-
             double AreaX = x.AreaTriangulo();
-
             Double AreaY = y.AreaTriangulo();
 
             Console.WriteLine("area de X = " + AreaX.ToString("f4", CultureInfo.InvariantCulture));
@@ -37,7 +33,6 @@ namespace EstudoAulaC_38 {
             }
             else {
                 Console.WriteLine("A area de ambos é igual");
-
             }
         }
     }
