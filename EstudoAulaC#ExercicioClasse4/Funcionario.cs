@@ -1,23 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
+using System;
 
 namespace EstudoAulaC_ExercicioClasse4 {
     internal class Funcionario {
         public string nome;
         public double SalarioBruto;
         public double imposto;
-
         public double SalarioLiquido() {
-            return SalarioBruto = imposto;
-
+            return SalarioBruto - imposto;
         }
-        public void double AumentarSalario(double x) {
-            SalarioBruto *= (x * 0.10);
-
+        public void AumentarSalario(double x) {
+            SalarioBruto = SalarioBruto + (SalarioBruto * x / 100);
         }
-
+        public override string ToString() {
+            return nome 
+                + ",Salário: " 
+                + SalarioLiquido().ToString("f2",CultureInfo.InvariantCulture);
+        }
     }
 }
+

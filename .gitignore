@@ -23,5 +23,4 @@ config.json
 .vscode/
 *.user
 *.suo
-/EstudoAula23C#exercicioReforco/.vs/EstudoAula23C#exercicioReforco
-.vs
+*.vs
