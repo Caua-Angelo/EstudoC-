@@ -15,6 +15,7 @@ obj/
 # Ignorar arquivos de configuração
 *.env
 config.json
+.json
 
 # Configurações locais
 *.dbmdl
