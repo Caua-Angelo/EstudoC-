@@ -1,20 +1,31 @@
 ﻿using System.Globalization;
+
 namespace Course {
     class Produto {
         public string Nome;
-        public double Preco;
-        public int Quantidade;
+        public double Preco { get; private set; }
+        public int Quantidade { get; private set; }
         public Produto(string nome, double preco, int quantidade) {
             Nome = nome;
             Preco = preco;
             Quantidade = quantidade;
         }
         public Produto() { }
-        public Produto(string nome,double preco) {
+        public Produto(string nome, double preco) {
             Nome = nome;
             Preco = preco;
             Quantidade = 5;
         }
+        public string nome {
+            get { return Nome; }
+            set {
+                if (value != null && value.Length > 1) {
+                    Nome = value;
+                }
+            }
+        }
+        
+        
         public double ValorTotalEmEstoque() {
             return Preco * Quantidade;
         }
