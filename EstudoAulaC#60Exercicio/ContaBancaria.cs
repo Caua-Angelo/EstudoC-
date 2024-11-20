@@ -12,18 +12,15 @@ namespace EstudoAulaC_60Exercicio {
             NomeTitular = nometitular;
             ValorConta = valorconta;
         }*/
-        public double DepositoInicial(double x) {
-            return ValorConta += x; {
-
-
+        public void DepositarValorConta(double x) {
+            ValorConta += x; {
             }
         }
-
-        public void AumentarValorConta(double x) {
-            ValorConta += x;
+        public void SacarValorConta(double x) {
+            ValorConta =(ValorConta - x )- 5.00;
         }
         public override string ToString() {
-            return "Conta " + NumeroConta + "," + "Titular" + NomeTitular + "," + "Saldo: " + ValorConta;
+            return "Conta " + NumeroConta + "," + "Titular: " + NomeTitular + "," + "Saldo: " + ValorConta.ToString("f2");
         }
 
 
