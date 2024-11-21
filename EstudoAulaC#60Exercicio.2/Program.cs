@@ -10,6 +10,7 @@
             contabancaria.TitularConta = Console.ReadLine();
             Console.Write("Haverá deposito inicial? (sim/não) ");
             string Duvidadeposito = Console.ReadLine();
+
             if (Duvidadeposito == "sim" || Duvidadeposito == "SIM") {
                 contabancaria.DepositarConta();
             }
