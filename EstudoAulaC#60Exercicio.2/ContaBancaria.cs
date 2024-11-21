@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EstudoAulaC_60Exercicio._2 {
     internal class ContaBancaria {
-        public int NumeroConta { get; set; }
+        public int NumeroConta { get;set; }
         public string TitularConta { get; set; }
         public double ValorConta { get; set; }
         public void DepositarConta() {

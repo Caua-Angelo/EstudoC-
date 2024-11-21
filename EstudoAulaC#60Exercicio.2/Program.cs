@@ -26,8 +26,6 @@
             contabancaria.SacarConta();
 
             Console.WriteLine(contabancaria);
-
-
         }
     }
 }
