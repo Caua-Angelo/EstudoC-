@@ -3,9 +3,9 @@
 namespace EstudoAulaC_60Exercicio {
     internal class ContaBancaria {
 
-        public int NumeroConta { get; set; }
-        public string NomeTitular { get; set; }
-        public double ValorConta { get; set; }
+        private int NumeroConta { get; set; }
+        private string NomeTitular { get; set; }
+        private double ValorConta { get; set; }
 
         /*/public ContaBancaria(int numeroconta,string nometitular,double valorconta) {
             NumeroConta = numeroconta;
