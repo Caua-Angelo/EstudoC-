@@ -8,8 +8,6 @@ namespace EstudoAulaC_71ExercicioVetores1 {
         public Quartos(string nome,string email) {
             Nome = nome;
             Email = email;
-          
-        
         }
         public override string ToString() {
             return Nome + ", " + Email ;

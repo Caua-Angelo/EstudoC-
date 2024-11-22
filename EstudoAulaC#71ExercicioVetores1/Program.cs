@@ -8,7 +8,7 @@
             int quantidadeQuartos = int.Parse(Console.ReadLine());
 
             for (int i = 1; i <= quantidadeQuartos; i++) {
-
+                //recebe as informações de nome e email da classe Quartos e coloca no quarto pedido pelo cliente
                 Console.WriteLine();
                 Console.WriteLine("Aluguel # " + i + ":");
                 Console.Write("nome: ");
@@ -17,13 +17,14 @@
                 string email = Console.ReadLine();
                 Console.Write("Quarto: ");
                 int quarto = int.Parse(Console.ReadLine());
+                //cria uma nova instancia da classe Quartos e coloca o nome e email dentro do espaço escolhido pelo cliente(nesse caso o quarto)
                 vect[quarto] = new Quartos(nome, email);
             }
             Console.WriteLine();
             Console.WriteLine("Quartos ocupados: ");
             for (int i = 0; i < 10; i++) {
-                if (vect[i] != null) {
-                    Console.WriteLine(i + ":" + vect[i]);
+                if (vect[i] != null) {// se o vetor não for nulo
+                    Console.WriteLine(i + ":" + vect[i]);//mostre o vetor
                 }
             }
         }
