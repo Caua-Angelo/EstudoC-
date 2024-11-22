@@ -5,7 +5,7 @@
             Quartos[] vect = new Quartos[10];
 
             Console.WriteLine("Quantos quartos serão alugados?");
-            int quantidadeQuartos = int.Parse(Console.ReadLine());
+            int quantidadeQuartos = int.Parse(Console.ReadLine());//recebe uma variável que define a quantidade de quartos que serão ocupados
 
             for (int i = 1; i <= quantidadeQuartos; i++) {
                 //recebe as informações de nome e email da classe Quartos e coloca no quarto pedido pelo cliente
