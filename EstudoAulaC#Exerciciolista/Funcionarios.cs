@@ -8,18 +8,18 @@ namespace EstudoAulaC_Exerciciolista {
     internal class Funcionarios {
         public int Id { get; set; }
         public string Name { get; set; }
-        public double salary { get; set; }
-        public Funcionarios(int id, string name, double salary) { 
+        public double Salary { get; set; }
+        public Funcionarios(int id, string name, double salary) { //cria um construtor com o Id nome e salário
             Id = id;
             Name = name;
-            salary = salary;
+            Salary = salary;
             }
-        public Funcionarios() { }
-        public double AumentarSalario(double x) {
-            return salary *= (x / 100);
+        public Funcionarios() { }//cria um construtor que é vazio
+        public void AumentarSalario(double porcentagem) {//aumenta o salário na porcentagem do número que é recebido
+             Salary += Salary * (porcentagem / 100.0);
         }
-        public override string ToString() {
-            return "Id: " + Id + ", " + Name + ", " + salary;
+        public override string ToString() {//formata a classe para mostrar os atributos de forma mais agradável
+            return "Id: " + Id + ", " + Name + ", " + Salary;
         }
 
     }

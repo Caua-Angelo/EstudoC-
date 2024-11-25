@@ -9,6 +9,7 @@
 
             for (int i = 0; i < QuantFuncionarios; i++) {
                 Console.WriteLine("Funcionário #" + (1+ i));
+
                 Console.Write("id: ");
                 int id = int.Parse(Console.ReadLine());
 
@@ -19,9 +20,9 @@
                 double salary = double.Parse(Console.ReadLine());
 
                 listaFuncionarios.Add(new Funcionarios(id, name, salary));
-                Console.WriteLine(listaFuncionarios);
+                Console.WriteLine();
             }
-            Console.Write("Entre com o id do funcionário que deverá ter o salario aumentado");
+            Console.Write("Entre com o id do funcionário que deverá ter o salario aumentado: ");
             int IdAumentarsalario = int.Parse(Console.ReadLine());
 
             Funcionarios funcioID = listaFuncionarios.Find(x => x.Id == IdAumentarsalario);
