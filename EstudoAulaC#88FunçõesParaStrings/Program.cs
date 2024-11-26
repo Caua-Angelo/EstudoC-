@@ -24,7 +24,7 @@
 
             bool b1 = String.IsNullOrEmpty(original);//verifica se  o boolean b1 é nulo ou se está vazio
             
-            bool b2 = String.IsNullOrWhiteSpace(original);//verifica se uma string é
+            bool b2 = String.IsNullOrWhiteSpace(original);//verifica se uma string é nula ou se tem espaços em branco
             
             Console.WriteLine("Original: -" + original + "-");
             
