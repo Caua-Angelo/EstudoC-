@@ -8,16 +8,8 @@ namespace EstudoAulaC_ExercicioAbrangenteCopilot
     {
         static void Main(string[] args)
         {
-            int valorindicado = 0;
-            int n = 0;
-
             Console.WriteLine("Quantos carros você deseja registrar?");
-            while (!int.TryParse(Console.ReadLine(), out valorindicado))
-            {
-                Console.WriteLine("Digite um valor valido: ");
-            }
-            n = valorindicado;
-            Console.WriteLine("QTD Carros => " + n);
+            int n = int.Parse(Console.ReadLine());
 
             Carro[] vect = new Carro[n];
             List<Livro> lista = new List<Livro>();
@@ -53,12 +45,12 @@ namespace EstudoAulaC_ExercicioAbrangenteCopilot
                 Console.Write("Ano de publicação: ");
                 int anopublicacao = int.Parse(Console.ReadLine());
 
-                lista.Add(new Livro(titulo, autor, anopublicacao));
+                lista.Add(new Livro(titulo,autor,anopublicacao));
 
                 Console.WriteLine("Deseja adicionar outro livro? (s/n)");
                 resposta = Console.ReadLine().ToUpper();
             }
-            while (resposta == "s");
+            while (resposta == "S");
             foreach (Livro livros in lista)
             {
                 Console.WriteLine(livros);
@@ -73,6 +65,10 @@ namespace EstudoAulaC_ExercicioAbrangenteCopilot
                 if (carro.Marca == marcacarro && carro.Modelo == modelocarro)
                 {
                     Console.WriteLine(carro);
+                }
+                else
+                {
+                    Console.WriteLine("Carro não encontrado");
                 }
             }
 
