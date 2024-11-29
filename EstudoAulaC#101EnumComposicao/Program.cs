@@ -12,7 +12,7 @@ namespace EstudoAulaC_101EnumComposicao
             Console.Write("Enter department's name: ");
             string deptName = Console.ReadLine();
 
-            Console.WriteLine("Enter worker data: ");
+            Console.WriteLine("Enter worker data:  );
             
             Console.Write("Name: ");
             string name = Console.ReadLine();
