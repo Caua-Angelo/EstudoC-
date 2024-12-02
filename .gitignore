@@ -23,4 +23,5 @@ config.json
 .vscode/
 *.user
 *.suo
-*.vs
+*.vs/
+.vs/
