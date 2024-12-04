@@ -1,5 +1,6 @@
 ﻿using EstudoAulaC_101Exercicio.Entities.Enum;
 using EstudoAulaC_101Exercicio.Entities;
+using System.Security.Cryptography.X509Certificates;
 
 
 namespace EstudoAulaC_101Exercicio.Entities
@@ -12,7 +13,7 @@ namespace EstudoAulaC_101Exercicio.Entities
         public Department Department { get; set; }
         public List<HourContract> Contracts { get; private set; } = new List<HourContract>();
         public Worker() { }
-        public Worker(string name, WorkerLevel level, double baseSalary) { Name = name; Level = level; BaseSalary = baseSalary; }
+        public Worker(string name, WorkerLevel level, double baseSalary,Department department) { Name = name; Level = level; BaseSalary = baseSalary; Department = department; }
         public void AddContract(HourContract contract) { Contracts.Add(contract); }
         public void RemoveContract(HourContract contract) { Contracts.Remove(contract); }
         public double Income(int year, int month)
@@ -26,6 +27,8 @@ namespace EstudoAulaC_101Exercicio.Entities
                 }
             }
             return sum;
+
+            
         }
     }
 }

@@ -10,6 +10,7 @@ namespace EstudoAulaC_101Exercicio
             Console.WriteLine("Qual é o Departamento?");
             string deptname = Console.ReadLine();
 
+            Department departamento = new Department(deptname);
             Console.WriteLine("Enter worker data: ");
 
             Console.Write("Name: ");
@@ -20,13 +21,12 @@ namespace EstudoAulaC_101Exercicio
             Console.Write("Base salary: ");
             double basesalary = double.Parse(Console.ReadLine());
 
-            Worker worker = new Worker(nome, level, basesalary);
+            Worker worker = new Worker(nome, level, basesalary,departamento);
 
             int n = 0;
             bool tentativa = false;
             while (!tentativa) //enquanto tentativa for negativo ele repetirá oque está abaixo
             {
-
                 Console.WriteLine("Qual a quantidade de contratos?");
                 string entrada = Console.ReadLine();
 
@@ -43,6 +43,7 @@ namespace EstudoAulaC_101Exercicio
                 Console.Write("Duration: ");
                 int duration = int.Parse(Console.ReadLine());
                 HourContract contracts = new HourContract(date, valueperhour, duration);
+                worker.AddContract(contracts);
             }
             Console.Write("Enter month and year to calculate income (MM/YYYY): ");
 
@@ -50,7 +51,10 @@ namespace EstudoAulaC_101Exercicio
 
             int month = int.Parse(monthAndYear.Substring(0, 2));
             int year = int.Parse(monthAndYear.Substring(3));
+
+            Console.WriteLine("Name: " + worker.Name);
+            Console.WriteLine("Department: " + worker.Department.DeptName);
+            Console.WriteLine("Income for " + monthAndYear +" " + worker.Income(year,month));
         }
     }
 }
- 

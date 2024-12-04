@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace EstudoAulaC_101Exercicio.Entities
 {
-    internal class Department
+    class Department
     {
         public string DeptName { get; set; }
-        public Department(string deptname) { DeptName = deptname; }
+        public Department(string deptname) {
+            DeptName = deptname; }
     }
 }
