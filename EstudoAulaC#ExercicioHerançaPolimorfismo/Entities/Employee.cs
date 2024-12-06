@@ -18,5 +18,9 @@ namespace EstudoAulaC_ExercicioHerançaPolimorfismo.Entities
         {
             return valueperhour * hours;
         }
+        public override string ToString()
+        {
+            return Name + " -" + "$ " + payment(Hours,ValuePerHour);
+        }
     }
 }
