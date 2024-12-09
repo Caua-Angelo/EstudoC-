@@ -20,7 +20,7 @@ namespace EstudoAulaC_ExercicioHerançaPolimorfismo.Entities
         }
         public override string ToString()
         {
-            return Name + " -" + "$ " + payment(Hours,ValuePerHour);
+            return Name + " -" + "$ " +  payment(Hours,ValuePerHour);
         }
     }
 }

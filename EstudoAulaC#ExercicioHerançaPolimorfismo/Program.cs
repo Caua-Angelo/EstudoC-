@@ -15,18 +15,18 @@ namespace EstudoAulaC_ExercicioHerançaPolimorfismo
             for (int i = 1; i <= quantemployees; i++)
             {
                 Console.WriteLine("Employee " + i + "# Data: ");
-                Console.Write("He is a Outsourced employee? ");
+                Console.Write("He is a Outsourced employee?(Y/N) ");
                 string EmployeeQuestion = Console.ReadLine();
                 {
                     if (EmployeeQuestion == "y" || EmployeeQuestion == "Y")
                     {
-                        Console.Write("Name:");
+                        Console.Write("Name: ");
                         string name = Console.ReadLine();
                         Console.Write("Hours: ");
                         int hours = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Value per hour: ");
+                        Console.Write("Value per hour: ");
                         double valueperhour = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Additional charge: ");
+                        Console.Write("Additional charge: ");
                         double additionalcharge = double.Parse(Console.ReadLine());
 
                         employees.Add(new OutsourcedEmployee(name, hours, valueperhour, additionalcharge));
@@ -37,16 +37,21 @@ namespace EstudoAulaC_ExercicioHerançaPolimorfismo
                         string name = Console.ReadLine();
                         Console.Write("Hours: ");
                         int hours = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Value per hour: ");
+                        Console.Write("Value per hour: ");
                         double valueperhour = double.Parse(Console.ReadLine());
                         employees.Add(new Employee(name, hours, valueperhour));
                     }
+                    else
+                    {
+                        Console.WriteLine("Entrada incorreta,programa encerrado");
+                        Environment.Exit(1);
+                    }
                 }
             }
-                    foreach (Employee employee in employees)
-                    {
-                        Console.WriteLine(employee);
-                    }
+            foreach (Employee employee in employees)
+            {
+                Console.WriteLine(employee);
+            }
         }
     }
 }
