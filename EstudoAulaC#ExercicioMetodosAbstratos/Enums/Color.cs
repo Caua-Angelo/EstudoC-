@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace EstudoAulaC_ExercicioMetodosAbstratos.Enums
 {
-    internal class Color
-    {
-        enum colors : int
+    
+        public enum Color : int
         {
             Black = 0,
-            blue = 1,
-            red = 2,
+            Blue = 1,
+            Red = 2,
 
         }
     }
-}
+

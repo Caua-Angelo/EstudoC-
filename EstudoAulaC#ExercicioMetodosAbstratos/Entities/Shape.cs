@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using EstudoAulaC_ExercicioMetodosAbstratos.Enums;
 
 namespace EstudoAulaC_ExercicioMetodosAbstratos.Entities
 {
-    internal class Shape
+    abstract internal class Shape
     {
-
+        public Color color { get; set; }
+        public Shape(Color color){
+            this.color = color; 
+        }
+        public abstract double Area();
+        
+        
     }
 }
