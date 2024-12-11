@@ -15,20 +15,23 @@ namespace EstudoAulaC_ExercicioHerançapolimorfismo3.Entities
             HealthExpenditures = healthexpeditures;
         }
 
+        double FinalTaxes;
         public override double TaxesCalculated()
         {
-            if (AnualIncome > 20000)//anual menor que 20000
+            if (AnualIncome < 20000)//se a renda anual for menor que 20000.00
             {
-                double calculation;
-                if (HealthExpenditures > 0)//se gastou com saude
-                {
-                    calculation = AnualIncome + (AnualIncome * 0.075);
-                }
-                else if (AnualIncome > 20000)
-                {
-                    calculation = AnualIncome + (AnualIncome * 0.15);
-                }
+                FinalTaxes = AnualIncome * 0.15;
             }
+            else if (AnualIncome > 20000)//se a renda anual for maior que 20000.00
+            {
+                FinalTaxes = AnualIncome * 0.25;
+            }
+            if (HealthExpenditures > 0)
+            {
+                FinalTaxes = FinalTaxes - (HealthExpenditures / 2);
+            }
+            return FinalTaxes;
         }
     }
 }
+
