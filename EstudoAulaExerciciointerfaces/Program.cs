@@ -6,18 +6,17 @@ namespace EstudoAulaExerciciointerfaces
     {
         static void Main(string[] args)
         {
-            List<Rental> rentals = new List<Rental>();
+          
 
             Console.WriteLine("enter rental data");
             Console.Write("Car Model: ");
             string carModel = Console.ReadLine();
-            Console.Write("Pickup");
+
+            Console.Write("Pickup (dd/MM/yyyy hh:mm)");
             DateTime pickup = DateTime.Parse(Console.ReadLine());
 
-            Console.Write("Return");
+            Console.Write("Return (dd/MM/yyyy hh:mm)");
             DateTime Return = DateTime.Parse(Console.ReadLine());
-
-            TimeSpan duracao = (pickup - Return);
 
             Console.Write("Enter price per hour: ");
             double pricePerHour = double.Parse(Console.ReadLine());
@@ -25,8 +24,11 @@ namespace EstudoAulaExerciciointerfaces
             Console.Write("Enter price per day: ");
             double priceperDay = double.Parse(Console.ReadLine());
 
-            rentals.Add(new Rental(carModel, pickup, Return, pricePerHour, priceperDay));
+            Rental rental = new Rental(carModel, pickup, Return, pricePerHour, priceperDay);
 
+            rental.Finalpayment();
+
+            Console.WriteLine(rental);
 
         }
     }

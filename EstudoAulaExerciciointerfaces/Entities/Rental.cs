@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace EstudoAulaExerciciointerfaces.Entities
 {
     internal class Rental
     {
-        public string CarModel { get; set; }
+        public String CarModel { get; set; }
         public DateTime Pickup { get; set; }
         public DateTime Return_ { get; set; }
-        public double ValuePerHour { get; set; }
-        public double ValuePerDay { get; set; }
+        public Double ValuePerHour { get; set; }
+        public Double ValuePerDay { get; set; }
         public Rental() { }
         public Rental(string carmodel, DateTime pickup, DateTime Return, double valueperhour, double valueperday)
         {
@@ -23,27 +25,51 @@ namespace EstudoAulaExerciciointerfaces.Entities
             ValuePerDay = valueperday;
         }
         TimeSpan duracao;
+        Double basicpayment;
+        Double tax;
+        Double paymentFinal;
         public void Duracao()
         {
-            duracao = (Pickup - Return_);
+            duracao = Return_ - Pickup;
         }
-        double PagamentoTotal = 0;
-        double ValorFinal(double valor)
+        public void Finalpayment()
         {
-            if (duracao.Minutes >= 1)
-
-                return 
+            Duracao();
+            if (duracao.Hours > 12)//se a quantidade de horas for maior que 12
+            {
+                if (duracao.Minutes >= 1)
+                {
+                    basicpayment = (ValuePerDay + 1) * duracao.Days;
+                }
+                else if(duracao >)
+                {
+                    basicpayment = ValuePerDay * duracao.Days;
+                }
+            }
+            else if (duracao.Hours < 12)
+            {
+                if (duracao.Minutes >= 1)
+                {
+                    basicpayment = (duracao.Hours + 1) * ValuePerHour;
+                }
+            }
+            if (basicpayment <= 100)
+            {
+                tax = (basicpayment * 0.20);
+            }
+            else
+            {
+                tax = (basicpayment * 0.15);
+            }
+            paymentFinal = basicpayment + tax;
         }
         public override string ToString()
         {
-            return;
+            return "INVOICE: " + Environment.NewLine
+                + "Basic payment: " + basicpayment + Environment.NewLine
+                + "Tax: " + tax + Environment.NewLine
+                + "Total: " + paymentFinal
+                ;
         }
-
-        //SE O VALOR PASSAR DE 12 HORAS A LOCAÇÃO É COBRADO O VALOR DIARIO
-
-        //DEPOIS DE CALCULADO O VALOR FINAL É CALCULADO O IMPOSTO SOBRE O VALOR DO ALUGUEL
-
-        //- PARA VALORES ATÉ 100,00 | 20%
-        //- PARA VALORES ACIMA DE 100,00 | 15%
     }
 }
