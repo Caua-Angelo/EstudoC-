@@ -25,7 +25,7 @@ namespace EstudoAulaExerciciointerfaces
 
             CarRental carRental = new CarRental(start, finish,new Vehicle(model));
 
-            RentalService rentalservice = new RentalService(pricePerHour, priceperDay);
+            RentalService rentalservice = new RentalService(pricePerHour, priceperDay,new BrasilTaxService());
 
             rentalservice.ProcessInvoice(carRental);
 
