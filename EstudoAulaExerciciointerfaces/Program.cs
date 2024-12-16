@@ -1,4 +1,5 @@
 ﻿using EstudoAulaExerciciointerfaces.Entities;
+using EstudoAulaExerciciointerfaces.Services;
 
 namespace EstudoAulaExerciciointerfaces
 {
@@ -8,7 +9,7 @@ namespace EstudoAulaExerciciointerfaces
         {
             Console.WriteLine("enter rental data");
             Console.Write("Car Model: ");
-            string carModel = Console.ReadLine();
+            string model = Console.ReadLine();
 
             Console.Write("Pickup (dd/MM/yyyy hh:mm)");
             DateTime start = DateTime.Parse(Console.ReadLine());
@@ -22,11 +23,16 @@ namespace EstudoAulaExerciciointerfaces
             Console.Write("Enter price per day: ");
             double priceperDay = double.Parse(Console.ReadLine());
 
-            Rental rental = new Rental(carModel, start, finish, pricePerHour, priceperDay);
+            CarRental carRental = new CarRental(start, finish,new Vehicle(model));
 
-            rental.Finalpayment();
+            RentalService rentalservice = new RentalService(pricePerHour, priceperDay);
 
-            Console.WriteLine(rental);
+            rentalservice.ProcessInvoice(carRental);
+
+            Console.WriteLine("Invoice");
+
+            Console.WriteLine(carRental.Invoice);
+            
 
         }
     }
