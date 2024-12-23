@@ -11,14 +11,16 @@ namespace EstudoAulaC_ExercícioInterface2.Services
             _onlinePaymentService = onlinePaymentService;
         }
 
-        public  void ProcessContract(Contract contract,int months)
+        public void ProcessContract(Contract contract, int months)
         {
             double basicQuota = contract.TotalValue / months;
-            for (int i = 1; i <= months; i++) {
+            for (int i = 1; i <= months; i++)
+            {
                 DateTime date = contract.Date.AddMonths(i);
-                double updateQuota = basicQuota + _onlinePaymentService.Interest(i);
+                double updateQuota = basicQuota + _onlinePaymentService.Interest(basicQuota, i);
+
+            }
 
         }
-
     }
 }
