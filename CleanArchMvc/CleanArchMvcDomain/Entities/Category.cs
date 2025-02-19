@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvcDomain.Entities
 {
-    public sealed class Category
+    public sealed class Category : Entity
     {
-        public int Id { get; private  set; }
         public string Name { get; private  set; }
 
         public Category(string name)
