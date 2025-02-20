@@ -1,4 +1,4 @@
-﻿namespace CleanArchMvcDomain
+﻿namespace CleanArchMvc.Domain
 {
     public class Class1
     {

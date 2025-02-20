@@ -1,4 +1,4 @@
-﻿namespace CleanArchMvcApplication
+﻿namespace CleanArchMvc.Application
 {
     public class Class1
     {

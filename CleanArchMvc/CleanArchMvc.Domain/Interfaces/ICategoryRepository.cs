@@ -17,4 +17,3 @@ namespace CleanArchMvcDomain.Interfaces
         Task<Category> RemoveAsync(Category category);
     }
 }
-    

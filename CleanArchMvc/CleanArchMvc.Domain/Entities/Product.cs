@@ -18,19 +18,19 @@ namespace CleanArchMvcDomain.Entities
 
         public Product(string name, string description, decimal price, int stock, string image)
         {
-            ValidateDomain(name,description,price,stock,image);
+            ValidateDomain(name, description, price, stock, image);
         }
 
-        public Product(int id,string name, string description, decimal price, int stock, string image)
+        public Product(int id, string name, string description, decimal price, int stock, string image)
         {
             DomainExceptionValidation.When(id < 0, "Invalid Id value");
             Id = id;
             ValidateDomain(name, description, price, stock, image);
         }
 
-        public void Update(string name, string description, decimal price, int stock, string image,int categoryid)
+        public void Update(string name, string description, decimal price, int stock, string image, int categoryid)
         {
-            
+
             ValidateDomain(name, description, price, stock, image);
             CategoryId = categoryid;
 
