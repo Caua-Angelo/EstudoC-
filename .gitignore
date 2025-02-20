@@ -25,3 +25,4 @@ config.json
 *.suo
 *.vs/
 .vs/
+/CleanArchMvc/CleanArchMvc/App.config
