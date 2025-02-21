@@ -35,8 +35,6 @@ namespace CleanArchMvcDomain.Entities
             CategoryId = categoryid;
 
         }
-
-
         private void ValidateDomain(string name, string description, decimal price, int stock, string image)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name),
@@ -57,7 +55,8 @@ namespace CleanArchMvcDomain.Entities
             DomainExceptionValidation.When(stock < 0,
                 "invalid stock value");
 
-            DomainExceptionValidation.When(image?.Length > 250, "Invalid image name,too long,maximum 250 characteres");
+            DomainExceptionValidation.When(image?.Length > 250,
+                "Invalid image name,too long,maximum 250 characteres");
 
             Name = name;
             Description = description;
