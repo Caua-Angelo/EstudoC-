@@ -16,6 +16,16 @@ namespace CleanArchMvcDomain.Entities
         public int Stock { get; private set; }
         public string Image { get; private set; }
 
+        /// <summary>
+        /// Inicializa uma nova instância da classe <see cref="Product"/>.
+        /// </summary>
+        /// <param name="id">Identificador do produto.</param>
+        /// <param name="name">Nome do produto.</param>
+        /// <param name="description">Descrição do produto.</param>
+        /// <param name="price">Preço do produto.</param>
+        /// <param name="stock">Estoque do produto.</param>
+        /// <param name="image">Nome da imagem do produto.</param>
+
         public Product(string name, string description, decimal price, int stock, string image)
         {
             ValidateDomain(name, description, price, stock, image);
@@ -49,11 +59,9 @@ namespace CleanArchMvcDomain.Entities
             DomainExceptionValidation.When(name.Length < 5,
                 "Invalid description.too short,minimum 5 characteres");
 
-            DomainExceptionValidation.When(price < 0,
-                "invalid price value");
+            DomainExceptionValidation.When(price < 0,"invalid price value");
 
-            DomainExceptionValidation.When(stock < 0,
-                "invalid stock value");
+            DomainExceptionValidation.When(stock < 0,"invalid stock value");
 
             DomainExceptionValidation.When(image?.Length > 250,
                 "Invalid image name,too long,maximum 250 characteres");
