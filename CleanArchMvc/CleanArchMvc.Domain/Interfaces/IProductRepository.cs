@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvcDomain.Interfaces
 {
-    internal interface IProductRepository
+    public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetCategories();
         Task<Product> GetbyId(int? id);
-
         Task<Product> Create(Product Product);
         Task<Product> Update(Product Product);
         Task<Product> Remove(Product Product);

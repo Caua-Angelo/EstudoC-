@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvcDomain.Interfaces
 {
-    internal interface ICategoryRepository
+    public interface ICategoryRepository
     {
         Task<IEnumerable<Category>> GetProductsAsync();
-        Task<Product> GetbyIdAsync(int? id);
-
         Task<Category> CreateAsync(Category category);
+        Task<Product> GetbyIdAsync(int? id);
         Task<Category> UpdateAsync(Category category);
         Task<Category> RemoveAsync(Category category);
     }
