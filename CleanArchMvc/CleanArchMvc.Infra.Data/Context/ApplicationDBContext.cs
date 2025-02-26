@@ -17,5 +17,11 @@ namespace CleanArchMvc.Infra.Data.Context
         //mapeamento ORM
         public DbSet<Category> categories { get; set; }
         public DbSet<Product> products { get; set; }
+        //
+        protected override void OnModelCreating(ModelBuilder Builder)
+        {
+            base.OnModelCreating(Builder);
+            Builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDBContext).Assembly);
+        }
     }
 }
