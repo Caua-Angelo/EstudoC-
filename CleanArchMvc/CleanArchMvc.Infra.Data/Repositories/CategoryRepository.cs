@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using CleanArchMvcDomain.Entities;
-using CleanArchMvc.Domain;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CleanArchMvcDomain.Entities;
 using CleanArchMvc.Infra.Data.Context;
 using CleanArchMvcDomain.Interfaces;
 using Microsoft.EntityFrameworkCore;
