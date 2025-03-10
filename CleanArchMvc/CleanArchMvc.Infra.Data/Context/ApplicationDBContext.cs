@@ -12,7 +12,7 @@ namespace CleanArchMvc.Infra.Data.Context
     {
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
-            
+
         }
         //mapeamento ORM
         public DbSet<Category> categories { get; set; }
