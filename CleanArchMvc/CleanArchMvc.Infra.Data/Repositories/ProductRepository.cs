@@ -1,11 +1,7 @@
-﻿using CleanArchMvcDomain.Interfaces;
-using CleanArchMvc.Infra.Data.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CleanArchMvc.Infra.Data.Context;
 using CleanArchMvcDomain.Entities;
+using CleanArchMvcDomain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchMvc.Infra.Data.Repositories
 {
@@ -32,22 +28,26 @@ namespace CleanArchMvc.Infra.Data.Repositories
 
         public async Task<Product> GetProductCategoryAsync(int? id)
         {
-            throw new NotImplementedException();
+            return await _productContext.Products.Include(c => c.Category).SingleOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task<IEnumerable<Product>> GetProducts()
         {
-            throw new NotImplementedException();
+            return await _productContext.Products.ToListAsync();
         }
 
         public async Task<Product> Remove(Product Product)
         {
-            throw new NotImplementedException();
+            _productContext.Remove(Product);
+            await _productContext.SaveChangesAsync();
+            return Product;
         }
 
         public async Task<Product> Update(Product Product)
         {
-            throw new NotImplementedException();
+            _productContext.Update(Product);
+            await _productContext.SaveChangesAsync();
+            return Product;
         }
     }
 }
