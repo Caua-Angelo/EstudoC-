@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using CleanArchMvcDomain.Entities;
+using CleanArchMvc.Domain;
 using System.Text;
 using System.Threading.Tasks;
 using CleanArchMvc.Infra.Data.Context;
 using CleanArchMvcDomain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchMvc.Infra.Data.Repositories
 {
@@ -17,31 +19,35 @@ namespace CleanArchMvc.Infra.Data.Repositories
             _categoryContext = context;
         }
 
-        public async Task<Category> CreateAsync(Category category)
+        public async Task<Category> Create(Category category)
         {
             _categoryContext.Add(category);
             await _categoryContext.SaveChangesAsync();
             return category;
         }
 
-        public async Task<Product> GetbyIdAsync(int? id)
+        public async Task<Category> GetbyId(int? id)
         {
-            throw new NotImplementedException();
+            return await _categoryContext.Categories.FindAsync(id);
         }
 
-        public async Task<IEnumerable<Category>> GetProductsAsync()
+        public async Task<IEnumerable<Category>> GetProducts()
         {
-            throw new NotImplementedException();
+            return await _categoryContext.Categories.ToListAsync();
         }
 
-        public async Task<Category> RemoveAsync(Category category)
+        public async Task<Category> Remove(Category category)
         {
-            throw new NotImplementedException();
+            _categoryContext.Remove(category);
+            await _categoryContext.SaveChangesAsync();
+            return category;
         }
 
-        public async Task<Category> UpdateAsync(Category category)
+        public async Task<Category> Update(Category category)
         {
-            throw new NotImplementedException();
+            _categoryContext.Update(category);
+            await _categoryContext.SaveChangesAsync();
+            return category;
         }
     }
 }

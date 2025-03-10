@@ -10,13 +10,12 @@ namespace CleanArchMvc.Infra.Data.Context
 {
     public class ApplicationDBContext : DbContext
     {
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
-        {
-
-        }
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options)
+            : base(options)
+        {}
         //mapeamento ORM
-        public DbSet<Category> categories { get; set; }
-        public DbSet<Product> products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
         //
         protected override void OnModelCreating(ModelBuilder Builder)
         {
