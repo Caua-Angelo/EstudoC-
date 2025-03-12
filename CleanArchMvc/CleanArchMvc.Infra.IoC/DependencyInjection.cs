@@ -18,7 +18,7 @@ namespace CleanArchMvc.Infra.IoC
         public static IServiceCollection AddInfrastructure(this IServiceCollection services,
             IConfiguration configuration)
         {
-            services.AddDbContext<ApplicationDBContext>(options => options.UseNpgsql(configuration.GetConnectionString(
+            services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(configuration.GetConnectionString(
                 "DefaltConnection"
             ), b => b.MigrationsAssembly(typeof(ApplicationDBContext).Assembly.FullName)));
 
