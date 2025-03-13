@@ -19,7 +19,7 @@ namespace CleanArchMvc.Infra.IoC
             IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDBContext>(options => options.UseSqlServer(configuration.GetConnectionString(
-                "DefaltConnection"
+                "DefaultConnection"
             ), b => b.MigrationsAssembly(typeof(ApplicationDBContext).Assembly.FullName)));
 
             services.AddScoped<ICategoryRepository, CategoryRepository>();
