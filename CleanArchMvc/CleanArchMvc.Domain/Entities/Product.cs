@@ -15,17 +15,6 @@ namespace CleanArchMvcDomain.Entities
         public decimal Price { get; private set; }
         public int Stock { get; private set; }
         public string Image { get; private set; }
-
-        /// <summary>
-        /// Inicializa uma nova instância da classe <see cref="Product"/>.
-        /// </summary>
-        /// <param name="id">Identificador do produto.</param>
-        /// <param name="name">Nome do produto.</param>
-        /// <param name="description">Descrição do produto.</param>
-        /// <param name="price">Preço do produto.</param>
-        /// <param name="stock">Estoque do produto.</param>
-        /// <param name="image">Nome da imagem do produto.</param>
-
         public Product(string name, string description, decimal price, int stock, string image)
         {
             ValidateDomain(name, description, price, stock, image);
