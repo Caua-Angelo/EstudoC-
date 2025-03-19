@@ -1,12 +1,9 @@
 ﻿using AutoMapper;
 using CleanArchMvc.Application.DTOS;
 using CleanArchMvc.Application.Interfaces;
+using CleanArchMvcDomain.Entities;
 using CleanArchMvcDomain.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CleanArchMvc.Application.Services
 {
@@ -22,25 +19,26 @@ namespace CleanArchMvc.Application.Services
 
         public async Task<IEnumerable<CategoryDTO>> GetCategories()
         {
-            var categoriesEntity = _categoryRepository.GetCategories();
+            var categoriesEntity = await _categoryRepository.GetCategories();
+            return _mapper.Map<IEnumerable<CategoryDTO>>(categoriesEntity);
         }
 
-        public async Task<IEnumerable<CategoryDTO>> GetById(int? id)
+        public Task<CategoryDTO> GetById(int? id)
         {
             throw new NotImplementedException();
         }
 
-        public async Task Add(CategoryDTO categoryDto)
+        public Task Add(CategoryDTO categoryDto)
         {
             throw new NotImplementedException();
         }
 
-        public async Task Update(CategoryDTO categoryDto)
+        public Task Update(CategoryDTO categoryDto)
         {
             throw new NotImplementedException();
         }
 
-        public async Task Remove(int? id)
+        public Task Remove(int? id)
         {
             throw new NotImplementedException();
         }

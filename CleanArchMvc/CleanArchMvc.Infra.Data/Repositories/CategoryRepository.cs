@@ -13,6 +13,11 @@ namespace CleanArchMvc.Infra.Data.Repositories
             _categoryContext = context;
         }
 
+        public Task<IEnumerable<Category>> GetCategories()
+        {
+            throw new NotImplementedException();
+        }
+       
         public async Task<Category> Create(Category category)
         {
             _categoryContext.Add(category);
@@ -23,11 +28,6 @@ namespace CleanArchMvc.Infra.Data.Repositories
         public async Task<Category> GetbyId(int? id)
         {
             return await _categoryContext.Categories.FindAsync(id);
-        }
-
-        public async Task<IEnumerable<Category>> GetProducts()
-        {
-            return await _categoryContext.Categories.ToListAsync();
         }
 
         public async Task<Category> Remove(Category category)
