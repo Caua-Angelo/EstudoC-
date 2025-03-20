@@ -29,7 +29,7 @@ namespace CleanArchMvcDomain.Entities
         }
 
         public ICollection<Product> products { get; set; }
-
+         
         private void ValidateDomain(string name)
         {
             DomainExceptionValidation.When(string.IsNullOrEmpty(name), "Invalid name.Name is required");

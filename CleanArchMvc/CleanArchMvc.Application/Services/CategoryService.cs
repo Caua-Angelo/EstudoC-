@@ -3,14 +3,15 @@ using CleanArchMvc.Application.DTOS;
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvcDomain.Entities;
 using CleanArchMvcDomain.Interfaces;
-using System.Collections.Generic;
 
 namespace CleanArchMvc.Application.Services
 {
     public class CategoryService : ICategoryService
     {
-        private ICategoryRepository _categoryRepository;
+        private ICategoryRepository _categoryRepository; 
         private readonly IMapper _mapper;
+
+        //define  as injeções de dependências
         public CategoryService(ICategoryRepository categoryRepository, IMapper mapper)
         {
             _categoryRepository = categoryRepository;
@@ -23,24 +24,28 @@ namespace CleanArchMvc.Application.Services
             return _mapper.Map<IEnumerable<CategoryDTO>>(categoriesEntity);
         }
 
-        public Task<CategoryDTO> GetById(int? id)
+        public async Task<CategoryDTO> GetById(int? id)
         {
-            throw new NotImplementedException();
+            var categoryEntity = await _categoryRepository.GetbyId(id);
+            return _mapper.Map<CategoryDTO>(categoryEntity);
         }
 
-        public Task Add(CategoryDTO categoryDto)
+        public async Task Add(CategoryDTO categoryDto)
         {
-            throw new NotImplementedException();
+            var categoryEntity = _mapper.Map<Category>(categoryDto);
+            await _categoryRepository.Create(categoryEntity);
         }
 
-        public Task Update(CategoryDTO categoryDto)
+        public async Task Update(CategoryDTO categoryDto)
         {
-            throw new NotImplementedException();
+            var categoryEntity = _mapper.Map<Category>(categoryDto);
+            await _categoryRepository.Update(categoryEntity);
         }
 
-        public Task Remove(int? id)
+        public async Task Remove(int? id)
         {
-            throw new NotImplementedException();
+            var categoryEntity = _categoryRepository.GetbyId(id).Result;
+            await _categoryRepository.Remove(categoryEntity);
         }
     }
 }
