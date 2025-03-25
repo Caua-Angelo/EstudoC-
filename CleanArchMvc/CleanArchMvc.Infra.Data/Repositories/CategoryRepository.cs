@@ -13,9 +13,9 @@ namespace CleanArchMvc.Infra.Data.Repositories
             _categoryContext = context;
         }
 
-        public Task<IEnumerable<Category>> GetCategories()
+        public async Task<IEnumerable<Category>> GetCategories()
         {
-            throw new NotImplementedException();
+            return await _categoryContext.Categories.ToListAsync();
         }
        
         public async Task<Category> Create(Category category)

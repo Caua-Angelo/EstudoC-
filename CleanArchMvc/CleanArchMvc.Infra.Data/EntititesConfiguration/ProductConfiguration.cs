@@ -15,13 +15,16 @@ namespace CleanArchMvc.Infra.Data.EntititesConfiguration
         {
             //define que o atributo Id de Product é uma chave primária
             builder.HasKey(t => t.Id);
+
             //define que o atributo Name de Product tem o tamanho máximo de 100 e obrigatória(não nulo)
             builder.Property(p => p.Name).HasMaxLength(100).IsRequired();
+
             //define que o atributo Description de Product tem o tamanho máximo de 200 e obrigatória(não nulo)
             builder.Property(p => p.Description).HasMaxLength(200).IsRequired();
 
             //define que o atributo Price de Product tem o tamanho máximo de 10,com duas casas decimais
             builder.Property(p => p.Price).HasPrecision(10, 2);
+
             //define que uma Category pode conter vários Products e que a chave estrangeira é a Id do category
             builder.HasOne(e => e.Category).WithMany(e => e.products).HasForeignKey(e => e.CategoryId);
 
