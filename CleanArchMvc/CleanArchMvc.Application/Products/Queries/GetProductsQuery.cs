@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Application.Products.Queries
 {
-    internal class GetProductsQuery : IRequest<IEnumerable<Product>>
+    public class GetProductsQuery : IRequest<IEnumerable<Product>>
     {
     }
 }
+ 
