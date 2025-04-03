@@ -10,7 +10,7 @@ namespace CleanArchMvc.Application.Products.Handlers
         private readonly IProductRepository _productRepository;
         public GetProductQueryHandler(IProductRepository productRepository)
         {
-            _productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
+            _productRepository = productRepository;
         }
 
         public async Task<IEnumerable<Product>> Handle(GetProductsQuery request, CancellationToken cancellationToken)
