@@ -62,7 +62,7 @@ namespace CleanArchMvc.WebUI.Controllers
             }
             return View(categoryDto);
         }
-
+        //
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
