@@ -41,6 +41,18 @@ namespace CleanArchMvc.Infra.Data.Repositories
 
         public async Task<Product> Remove(Product Product)
         {
+            if (Product == null)
+                throw new InvalidOperationException("Produto já foi removido ou não existe.");
+
+            try
+            {
+                await _productContext.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                throw new InvalidOperationException("Erro de concorrência ao tentar excluir. O produto pode ter sido modificado ou excluído por outro processo.");
+            }
+
             _productContext.Remove(Product);
             await _productContext.SaveChangesAsync();
             return Product;

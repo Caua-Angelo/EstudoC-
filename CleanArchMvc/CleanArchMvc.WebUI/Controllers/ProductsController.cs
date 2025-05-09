@@ -17,7 +17,7 @@ namespace CleanArchMvc.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var products = await _productService.GetProducts();   
+            var products = await _productService.GetProducts();
             return View(products);
         }
         [HttpGet()]
@@ -41,7 +41,7 @@ namespace CleanArchMvc.WebUI.Controllers
                 ViewBag.CategoryId =
                     new SelectList(await _categoryService.GetCategories(), "Id", "Name");
             }
-                return View(productDto);
+            return View(productDto);
         }
         [HttpGet()]
         public async Task<IActionResult> Edit(int? id)
@@ -72,5 +72,23 @@ namespace CleanArchMvc.WebUI.Controllers
             }
             return View(productDto);
         }
+        [HttpGet()]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return NotFound();
+
+            var productDto = await _productService.GetById(id);
+
+            if (productDto == null) return NotFound();
+
+            return View(productDto);
+        }
+        [HttpPost(), ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            await _productService.Remove(id);
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

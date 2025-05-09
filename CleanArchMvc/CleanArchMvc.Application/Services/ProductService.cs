@@ -18,7 +18,6 @@ namespace CleanArchMvc.Application.Services
         public ProductService(IMapper mapper, IMediator mediator)
         {
             _mediator = mediator;
-
             _mapper = mapper;
         }
         public async Task<IEnumerable<ProductDTO>> GetProducts()
@@ -70,7 +69,6 @@ namespace CleanArchMvc.Application.Services
             var productUpdateCommand = _mapper.Map<ProductUpdateCommand>(productDto);
             await _mediator.Send(productUpdateCommand);
         }
-
 
         public async Task Remove(int? id)
         {
